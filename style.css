@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+header img{
+ width: 400px; /* Controla a altura máxima da logo */
+ height:400px; /* Arredonda os cantos da imagem */
+ box-shadow: 0 4px 8px(0, 0, 0, 0.2); /* Sombra suave */
+ transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+ background-color:transparent;
+ margin-top: -30px;
+ 
+ align-items: center;
+
+
+}
+
+
+p{
+    color: white;
+    margin-bottom: 5px;
+
+}
+h1{
+    color: white;
+margin-bottom: 20px;
+font-size: 30;
+}
+h2{
+    color: white;
+    margin-bottom: 30px;
+
+}
+.fot{
+  margin-top: 250px;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  header img {
+    width: 100%;
+    height: auto;
+  }
+
+  h1, h2, p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+
+/* Animação hover para botões */
+nav a {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #444;
+  color: #fff;
+  transform: scale(1.05);
+}

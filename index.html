@@ -87,11 +87,14 @@
   <p class="fot">&copy; 2025 PanoBianco Pedreira. Todos os direitos reservados.</p>
 </footer>
 
-<!-- POPUP COM GIF -->
+<!-- POPUP COM VÍDEO -->
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close-btn" onclick="closePopup()">×</span>
-    popup.gif
+    <video autoplay muted loop style="width: 100%; border-radius: 8px;">
+      popup.mp4
+      Seu navegador não suporta vídeo.
+    </video>
   </div>
 </div>
 
@@ -116,17 +119,13 @@
   max-height: 90%;
   position: relative;
 }
-.popup-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 .close-btn {
   position: absolute;
   top: 5px;
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+  color: #000;
 }
 </style>
 
@@ -140,6 +139,5 @@ window.onload = function() {
   }, 2000);
 };
 </script>
-
 </body>
 </html>

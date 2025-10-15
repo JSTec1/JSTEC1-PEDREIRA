@@ -81,8 +81,37 @@
    <p>Segunda a Quinta-feira das 05h às 23h</p>
     <p>Sexta-feira das 05h às 22h</p>
     <p>Sábados, Domingos e Feriados das 08h às 14h</p> </div>
-</body>
 <footer>
  <p class="fot">&copy; 2025 PanoBianco Pedreira.Todos os direitos reservados.</p>
 </footer>
+        <!-- POP-UP DE VÍDEO -->
+<div id="videoPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:1000;">
+    <div style="position:relative; max-width:800px; width:90%; background:#000; padding:10px; border-radius:10px; box-shadow: 0 0 20px rgba(0,0,0,0.5); text-align:center;">
+        <video id="popupVideo" width="100%" controls autoplay muted style="border-radius:10px;">
+            <source src="POP-UP.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <br>
+        <button id="closePopup" style="margin-top:10px; padding:12px 25px; font-size:18px; border:none; border-radius:8px; background-color:#f66105; color:white; cursor:pointer; transition: background-color 0.3s;">
+            Fechar
+        </button>
+    </div>
+</div>
+
+<script>
+    // Mostra o pop-up quando a página carrega
+    window.addEventListener('load', function() {
+        document.getElementById('videoPopup').style.display = 'flex';
+    });
+
+    // Fecha o pop-up ao clicar no botão
+    document.getElementById('closePopup').addEventListener('click', function() {
+        var popup = document.getElementById('videoPopup');
+        var video = document.getElementById('popupVideo');
+        video.pause(); // pausa o vídeo
+        popup.style.display = 'none';
+    });
+</script>
+
+</body>
 </html>

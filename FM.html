@@ -97,13 +97,15 @@
 
 </div>
 <script>
-    // MOSTRA A MENSAGEM DE SUCESSO
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get("enviado") === "1") {
-        alert("Obrigado! Sua sugestão foi enviada com sucesso.");
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("enviado") === "1") {
+        setTimeout(() => {
+            alert("Obrigado! Sua sugestão foi enviada com sucesso.");
+        }, 300);
     }
 </script>
 
 </body>
 </html>
+
 

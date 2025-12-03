@@ -96,6 +96,14 @@
     </p>
 
 </div>
+<script>
+    // MOSTRA A MENSAGEM DE SUCESSO
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("enviado") === "1") {
+        alert("Obrigado! Sua sugestão foi enviada com sucesso.");
+    }
+</script>
 
 </body>
 </html>
+

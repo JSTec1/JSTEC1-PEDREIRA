@@ -25,4 +25,77 @@
 
         textarea {
             width: 100%;
-            heig
+            height: 150px;
+            padding: 12px;
+            margin-top: 6px;
+            border-radius: 8px;
+            background: #000;
+            border: 1px solid #333;
+            color: white;
+            font-size: 15px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 0;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        button:hover {
+            background: #135fbe;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="formulario-anonimo">
+
+    <h2 style="text-align: center; margin-bottom: 10px;">Envie sua Sugestão</h2>
+    <p style="text-align: center; color: #bbbbbb; margin-bottom: 25px;">
+        Sua sugestão será enviada de forma 100% anônima
+    </p>
+
+    <!-- FORM SUBMIT FINAL E CORRETO -->
+    <form action="https://formsubmit.co/johnsouzx@gmail.com" method="POST">
+
+        <!-- PERMITE POST PELO GITHUB PAGES -->
+        <input type="hidden" name="_origin" value="https://panobiancopedreira.github.io">
+
+        <!-- REMOVE CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <!-- PÁGINA DE CONFIRMAÇÃO APÓS ENVIO -->
+        <input type="hidden" name="_next" value="https://panobiancopedreira.github.io/formulário.html?enviado=1">
+
+        <label style="font-size:16px;">Qual sua sugestão ou feedback?</label>
+
+        <textarea
+            name="mensagem"
+            required
+            placeholder="Digite aqui..."
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p style="margin-top: 15px; font-size: 13px; color: #777;">
+        Nunca envie senhas pelo formulário.
+    </p>
+
+</div>
+
+</body>
+</html>

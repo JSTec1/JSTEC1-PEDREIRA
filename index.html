@@ -102,6 +102,14 @@
 <footer>
  <p class="fot">&copy; 2025 PanoBianco Pedreira.Todos os direitos reservados.</p>
 </footer>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("enviado") === "1") {
+        setTimeout(() => {
+            alert("Obrigado! Sua sugestão foi enviada com sucesso.");
+        }, 300);
+    }
+</script>
 
 </body>
 </html>
